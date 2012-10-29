@@ -7,23 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B493BB70163E9AF3001D7FCC /* libsqlite3.0.dylib in Resources */ = {isa = PBXBuildFile; fileRef = B493BB6F163E9AF3001D7FCC /* libsqlite3.0.dylib */; };
+		B493BB8C163E9C38001D7FCC /* WineList.m in Sources */ = {isa = PBXBuildFile; fileRef = B493BB89163E9C38001D7FCC /* WineList.m */; };
+		B493BB8D163E9C38001D7FCC /* WinesDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = B493BB8B163E9C38001D7FCC /* WinesDAO.m */; };
+		B493BBB3163E9C7C001D7FCC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B493BBA6163E9C7C001D7FCC /* AppDelegate.m */; };
+		B493BBB8163E9C7C001D7FCC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B493BBAD163E9C7C001D7FCC /* InfoPlist.strings */; };
+		B493BBB9163E9C7C001D7FCC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B493BBAF163E9C7C001D7FCC /* main.m */; };
+		B493BBBA163E9C7C001D7FCC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B493BBB0163E9C7C001D7FCC /* MainStoryboard.storyboard */; };
+		B493BBBB163E9C7C001D7FCC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B493BBB2163E9C7C001D7FCC /* ViewController.m */; };
+		B493BBC2163E9CEF001D7FCC /* artdb-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B493BBBD163E9CEF001D7FCC /* artdb-Info.plist */; };
+		B493BBC3163E9CEF001D7FCC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B493BBBF163E9CEF001D7FCC /* Default-568h@2x.png */; };
+		B493BBC4163E9CEF001D7FCC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B493BBC0163E9CEF001D7FCC /* Default.png */; };
+		B493BBC5163E9CEF001D7FCC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B493BBC1163E9CEF001D7FCC /* Default@2x.png */; };
 		CCCE714E16383EEF00C46812 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCE714D16383EEF00C46812 /* UIKit.framework */; };
 		CCCE715016383EEF00C46812 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCE714F16383EEF00C46812 /* Foundation.framework */; };
 		CCCE715216383EEF00C46812 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCE715116383EEF00C46812 /* CoreGraphics.framework */; };
-		CCCE715816383EEF00C46812 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CCCE715616383EEF00C46812 /* InfoPlist.strings */; };
-		CCCE715A16383EEF00C46812 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCE715916383EEF00C46812 /* main.m */; };
-		CCCE715E16383EEF00C46812 /* NOOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCE715D16383EEF00C46812 /* NOOAppDelegate.m */; };
-		CCCE716016383EEF00C46812 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CCCE715F16383EEF00C46812 /* Default.png */; };
-		CCCE716216383EEF00C46812 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCCE716116383EEF00C46812 /* Default@2x.png */; };
-		CCCE716416383EEF00C46812 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCCE716316383EEF00C46812 /* Default-568h@2x.png */; };
-		CCCE716716383EEF00C46812 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCCE716516383EEF00C46812 /* MainStoryboard_iPhone.storyboard */; };
-		CCCE716A16383EEF00C46812 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCCE716816383EEF00C46812 /* MainStoryboard_iPad.storyboard */; };
-		CCCE716D16383EEF00C46812 /* NOOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCE716C16383EEF00C46812 /* NOOViewController.m */; };
 		CCCE717516383EF000C46812 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCE717416383EF000C46812 /* SenTestingKit.framework */; };
 		CCCE717616383EF000C46812 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCE714D16383EEF00C46812 /* UIKit.framework */; };
 		CCCE717716383EF000C46812 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCE714F16383EEF00C46812 /* Foundation.framework */; };
-		CCCE717F16383EF000C46812 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CCCE717D16383EF000C46812 /* InfoPlist.strings */; };
-		CCCE718216383EF000C46812 /* dnb_art_collectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCE718116383EF000C46812 /* dnb_art_collectionTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,29 +38,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B493BB6F163E9AF3001D7FCC /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = file; path = libsqlite3.0.dylib; sourceTree = "<group>"; };
+		B493BB88163E9C38001D7FCC /* WineList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WineList.h; sourceTree = "<group>"; };
+		B493BB89163E9C38001D7FCC /* WineList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WineList.m; sourceTree = "<group>"; };
+		B493BB8A163E9C38001D7FCC /* WinesDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinesDAO.h; sourceTree = "<group>"; };
+		B493BB8B163E9C38001D7FCC /* WinesDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WinesDAO.m; sourceTree = "<group>"; };
+		B493BBA5163E9C7C001D7FCC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B493BBA6163E9C7C001D7FCC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B493BBAE163E9C7C001D7FCC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		B493BBAF163E9C7C001D7FCC /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B493BBB0163E9C7C001D7FCC /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		B493BBB1163E9C7C001D7FCC /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B493BBB2163E9C7C001D7FCC /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B493BBBD163E9CEF001D7FCC /* artdb-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "artdb-Info.plist"; sourceTree = "<group>"; };
+		B493BBBE163E9CEF001D7FCC /* artdb-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "artdb-Prefix.pch"; sourceTree = "<group>"; };
+		B493BBBF163E9CEF001D7FCC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		B493BBC0163E9CEF001D7FCC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		B493BBC1163E9CEF001D7FCC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		CCCE714916383EEF00C46812 /* dnb-art-collection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dnb-art-collection.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCCE714D16383EEF00C46812 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CCCE714F16383EEF00C46812 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CCCE715116383EEF00C46812 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		CCCE715516383EEF00C46812 /* dnb-art-collection-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "dnb-art-collection-Info.plist"; sourceTree = "<group>"; };
-		CCCE715716383EEF00C46812 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CCCE715916383EEF00C46812 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CCCE715B16383EEF00C46812 /* dnb-art-collection-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "dnb-art-collection-Prefix.pch"; sourceTree = "<group>"; };
-		CCCE715C16383EEF00C46812 /* NOOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NOOAppDelegate.h; sourceTree = "<group>"; };
-		CCCE715D16383EEF00C46812 /* NOOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NOOAppDelegate.m; sourceTree = "<group>"; };
-		CCCE715F16383EEF00C46812 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		CCCE716116383EEF00C46812 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		CCCE716316383EEF00C46812 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		CCCE716616383EEF00C46812 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		CCCE716916383EEF00C46812 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		CCCE716B16383EEF00C46812 /* NOOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NOOViewController.h; sourceTree = "<group>"; };
-		CCCE716C16383EEF00C46812 /* NOOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NOOViewController.m; sourceTree = "<group>"; };
 		CCCE717316383EF000C46812 /* dnb-art-collectionTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dnb-art-collectionTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCCE717416383EF000C46812 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		CCCE717C16383EF000C46812 /* dnb-art-collectionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "dnb-art-collectionTests-Info.plist"; sourceTree = "<group>"; };
-		CCCE717E16383EF000C46812 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CCCE718016383EF000C46812 /* dnb_art_collectionTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dnb_art_collectionTests.h; sourceTree = "<group>"; };
-		CCCE718116383EF000C46812 /* dnb_art_collectionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dnb_art_collectionTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,11 +87,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B493BB64163E9A26001D7FCC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B493BB88163E9C38001D7FCC /* WineList.h */,
+				B493BB89163E9C38001D7FCC /* WineList.m */,
+				B493BB8A163E9C38001D7FCC /* WinesDAO.h */,
+				B493BB8B163E9C38001D7FCC /* WinesDAO.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B493BB66163E9A51001D7FCC /* artdb */ = {
+			isa = PBXGroup;
+			children = (
+				B493BBBC163E9C93001D7FCC /* Supporting Files */,
+				B493BBA5163E9C7C001D7FCC /* AppDelegate.h */,
+				B493BBA6163E9C7C001D7FCC /* AppDelegate.m */,
+				B493BBAC163E9C7C001D7FCC /* en.lproj */,
+				B493BBAF163E9C7C001D7FCC /* main.m */,
+				B493BBB0163E9C7C001D7FCC /* MainStoryboard.storyboard */,
+				B493BBB1163E9C7C001D7FCC /* ViewController.h */,
+				B493BBB2163E9C7C001D7FCC /* ViewController.m */,
+			);
+			name = artdb;
+			sourceTree = "<group>";
+		};
+		B493BBAC163E9C7C001D7FCC /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				B493BBAD163E9C7C001D7FCC /* InfoPlist.strings */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		B493BBBC163E9C93001D7FCC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B493BBBD163E9CEF001D7FCC /* artdb-Info.plist */,
+				B493BBBE163E9CEF001D7FCC /* artdb-Prefix.pch */,
+				B493BBBF163E9CEF001D7FCC /* Default-568h@2x.png */,
+				B493BBC0163E9CEF001D7FCC /* Default.png */,
+				B493BBC1163E9CEF001D7FCC /* Default@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		CCCE713E16383EEF00C46812 = {
 			isa = PBXGroup;
 			children = (
-				CCCE715316383EEF00C46812 /* dnb-art-collection */,
-				CCCE717A16383EF000C46812 /* dnb-art-collectionTests */,
+				B493BB6F163E9AF3001D7FCC /* libsqlite3.0.dylib */,
+				B493BB66163E9A51001D7FCC /* artdb */,
+				B493BB64163E9A26001D7FCC /* Model */,
 				CCCE714C16383EEF00C46812 /* Frameworks */,
 				CCCE714A16383EEF00C46812 /* Products */,
 			);
@@ -114,53 +162,6 @@
 				CCCE717416383EF000C46812 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		CCCE715316383EEF00C46812 /* dnb-art-collection */ = {
-			isa = PBXGroup;
-			children = (
-				CCCE715C16383EEF00C46812 /* NOOAppDelegate.h */,
-				CCCE715D16383EEF00C46812 /* NOOAppDelegate.m */,
-				CCCE716516383EEF00C46812 /* MainStoryboard_iPhone.storyboard */,
-				CCCE716816383EEF00C46812 /* MainStoryboard_iPad.storyboard */,
-				CCCE716B16383EEF00C46812 /* NOOViewController.h */,
-				CCCE716C16383EEF00C46812 /* NOOViewController.m */,
-				CCCE715416383EEF00C46812 /* Supporting Files */,
-			);
-			path = "dnb-art-collection";
-			sourceTree = "<group>";
-		};
-		CCCE715416383EEF00C46812 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				CCCE715516383EEF00C46812 /* dnb-art-collection-Info.plist */,
-				CCCE715616383EEF00C46812 /* InfoPlist.strings */,
-				CCCE715916383EEF00C46812 /* main.m */,
-				CCCE715B16383EEF00C46812 /* dnb-art-collection-Prefix.pch */,
-				CCCE715F16383EEF00C46812 /* Default.png */,
-				CCCE716116383EEF00C46812 /* Default@2x.png */,
-				CCCE716316383EEF00C46812 /* Default-568h@2x.png */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		CCCE717A16383EF000C46812 /* dnb-art-collectionTests */ = {
-			isa = PBXGroup;
-			children = (
-				CCCE718016383EF000C46812 /* dnb_art_collectionTests.h */,
-				CCCE718116383EF000C46812 /* dnb_art_collectionTests.m */,
-				CCCE717B16383EF000C46812 /* Supporting Files */,
-			);
-			path = "dnb-art-collectionTests";
-			sourceTree = "<group>";
-		};
-		CCCE717B16383EF000C46812 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				CCCE717C16383EF000C46812 /* dnb-art-collectionTests-Info.plist */,
-				CCCE717D16383EF000C46812 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,12 +236,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCCE715816383EEF00C46812 /* InfoPlist.strings in Resources */,
-				CCCE716016383EEF00C46812 /* Default.png in Resources */,
-				CCCE716216383EEF00C46812 /* Default@2x.png in Resources */,
-				CCCE716416383EEF00C46812 /* Default-568h@2x.png in Resources */,
-				CCCE716716383EEF00C46812 /* MainStoryboard_iPhone.storyboard in Resources */,
-				CCCE716A16383EEF00C46812 /* MainStoryboard_iPad.storyboard in Resources */,
+				B493BB70163E9AF3001D7FCC /* libsqlite3.0.dylib in Resources */,
+				B493BBB8163E9C7C001D7FCC /* InfoPlist.strings in Resources */,
+				B493BBBA163E9C7C001D7FCC /* MainStoryboard.storyboard in Resources */,
+				B493BBC2163E9CEF001D7FCC /* artdb-Info.plist in Resources */,
+				B493BBC3163E9CEF001D7FCC /* Default-568h@2x.png in Resources */,
+				B493BBC4163E9CEF001D7FCC /* Default.png in Resources */,
+				B493BBC5163E9CEF001D7FCC /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,7 +250,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCCE717F16383EF000C46812 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,9 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCCE715A16383EEF00C46812 /* main.m in Sources */,
-				CCCE715E16383EEF00C46812 /* NOOAppDelegate.m in Sources */,
-				CCCE716D16383EEF00C46812 /* NOOViewController.m in Sources */,
+				B493BB8C163E9C38001D7FCC /* WineList.m in Sources */,
+				B493BB8D163E9C38001D7FCC /* WinesDAO.m in Sources */,
+				B493BBB3163E9C7C001D7FCC /* AppDelegate.m in Sources */,
+				B493BBB9163E9C7C001D7FCC /* main.m in Sources */,
+				B493BBBB163E9C7C001D7FCC /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +288,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCCE718216383EF000C46812 /* dnb_art_collectionTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,34 +302,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CCCE715616383EEF00C46812 /* InfoPlist.strings */ = {
+		B493BBAD163E9C7C001D7FCC /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CCCE715716383EEF00C46812 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		CCCE716516383EEF00C46812 /* MainStoryboard_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CCCE716616383EEF00C46812 /* en */,
-			);
-			name = MainStoryboard_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		CCCE716816383EEF00C46812 /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CCCE716916383EEF00C46812 /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
-			sourceTree = "<group>";
-		};
-		CCCE717D16383EF000C46812 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CCCE717E16383EF000C46812 /* en */,
+				B493BBAE163E9C7C001D7FCC /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -462,6 +440,7 @@
 				CCCE718716383EF000C46812 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CCCE718816383EF000C46812 /* Build configuration list for PBXNativeTarget "dnb-art-collectionTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +449,7 @@
 				CCCE718A16383EF000C46812 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
