@@ -82,6 +82,15 @@
     
 }
 -(IBAction)getPrevious:(id)sender{
+    NSLog(@" in get previous");
+    self.currentItem ++;
+    if (self.currentItem == artWorks.count){
+        self.currentItem = 0;
+    }
+    DKAArtWork *artWork = (DKAArtWork*) [self.artWorks objectAtIndex:self.currentItem];
+    
+    [self presentArtWork:artWork];
+
     
 }
 - (void)viewDidUnload {

@@ -76,6 +76,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="9Tw-OS-xEf" appends="YES" id="Ww8-23-skA"/>
+                                    <outletCollection property="gestureRecognizers" destination="8k3-21-fIh" appends="YES" id="FU2-l6-GHZ"/>
                                 </connections>
                             </scrollView>
                         </subviews>
@@ -91,15 +92,34 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer cancelsTouchesInView="NO" direction="right" id="9Tw-OS-xEf">
+                <swipeGestureRecognizer cancelsTouchesInView="NO" direction="left" id="9Tw-OS-xEf" userLabel="Swipe Gesture Recognizer -right">
                     <connections>
                         <action selector="getNext:" destination="2" id="XR4-fg-YrB"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer cancelsTouchesInView="NO" direction="right" id="8k3-21-fIh" userLabel="Swipe Gesture Recognizer  -left">
+                    <connections>
+                        <action selector="getPrevious:" destination="2" id="e5h-j1-WDR"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="632" y="80"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="DKAViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DKAViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="getNext:"/>
+                <relationship kind="action" name="getPrevious:"/>
+                <relationship kind="outlet" name="artistLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="descriptionTextView" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="objectNumberLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="photoView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
