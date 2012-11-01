@@ -137,7 +137,6 @@
 				CCED0A141642A2C600986366 /* MainStoryboard_iPad.storyboard */,
 				CCED0A171642A2C600986366 /* DKAViewController.h */,
 				CCED0A181642A2C600986366 /* DKAViewController.m */,
-				CCED0A441642DB5D00986366 /* ArtDB.sqlite */,
 				CCED0A001642A2C600986366 /* Supporting Files */,
 				CCED0A3C1642BBA200986366 /* DKAArtWork.h */,
 				CCED0A3D1642BBA200986366 /* DKAArtWork.m */,
@@ -150,6 +149,7 @@
 		CCED0A001642A2C600986366 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CCED0A441642DB5D00986366 /* ArtDB.sqlite */,
 				CCED0A011642A2C600986366 /* de Kunstkijker-Info.plist */,
 				CCED0A021642A2C600986366 /* InfoPlist.strings */,
 				CCED0A051642A2C600986366 /* main.m */,
