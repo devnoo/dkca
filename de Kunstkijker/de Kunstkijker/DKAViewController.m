@@ -46,9 +46,8 @@
    
     DKAArtWork *artWork = (DKAArtWork*) [self.artWorks objectAtIndex:self.currentItem];
     
-    [self.objectNumberLabel setText:(artWork.objectNumber)];
-    [self.titleLabel setText:(artWork.title)];
-    [self.artistLabel setText:(artWork.artist)];
+    
+    [self presentArtWork:artWork];
     
     [self.descriptionTextView setText:(artWork.description)];
     
@@ -63,11 +62,35 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)getNext:(id)sender{
+- (void)presentArtWork:(DKAArtWork *)artWork {
+    [self.objectNumberLabel setText:(artWork.objectNumber)];
+    [self.titleLabel setText:(artWork.title)];
+    [self.artistLabel setText:(artWork.artist)];
+    [self.photoView setImage:artWork.photo];
     
+    [self.descriptionTextView setText:(artWork.description)];
+}
+
+- (IBAction)getNext:(id)sender{
+    self.currentItem --;
+    if (self.currentItem < 0){
+        self.currentItem = artWorks.count -1;
+    }
+    DKAArtWork *artWork = (DKAArtWork*) [self.artWorks objectAtIndex:self.currentItem];
+    
+    [self presentArtWork:artWork];
     
 }
 -(IBAction)getPrevious:(id)sender{
+    NSLog(@" in get previous");
+    self.currentItem ++;
+    if (self.currentItem == artWorks.count){
+        self.currentItem = 0;
+    }
+    DKAArtWork *artWork = (DKAArtWork*) [self.artWorks objectAtIndex:self.currentItem];
+    
+    [self presentArtWork:artWork];
+
     
 }
 - (void)viewDidUnload {
