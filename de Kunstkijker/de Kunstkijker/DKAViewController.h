@@ -8,6 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DKAViewController : UIViewController
+@interface DKAViewController : UIViewController{
+    NSMutableArray *artWorks;
+}
+@property (nonatomic, retain) NSMutableArray *artWorks;
+@property (nonatomic, weak) IBOutlet UIImageView *photoView;
+@property (nonatomic, weak) IBOutlet UILabel *titleLabel;
+@property (nonatomic, weak) IBOutlet UILabel *objectNumberLabel;
+@property (nonatomic, weak) IBOutlet UILabel *artistLabel;
+@property (weak, nonatomic) IBOutlet UITextView *descriptionTextView;
+
+
+- (IBAction)getNext:(id)sender;
+- (IBAction)getPrevious:(id)sender;
+
 
 @end

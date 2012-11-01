@@ -24,6 +24,10 @@
 		CCED0A231642A2C600986366 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCED09FB1642A2C600986366 /* Foundation.framework */; };
 		CCED0A2B1642A2C600986366 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CCED0A291642A2C600986366 /* InfoPlist.strings */; };
 		CCED0A2E1642A2C600986366 /* de_KunstkijkerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCED0A2D1642A2C600986366 /* de_KunstkijkerTests.m */; };
+		CCED0A381642BABE00986366 /* ArtDB.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = CCED0A371642BABE00986366 /* ArtDB.sqlite */; };
+		CCED0A3B1642BB4900986366 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CCED0A3A1642BB4900986366 /* libsqlite3.dylib */; };
+		CCED0A3E1642BBA200986366 /* DKAArtWork.m in Sources */ = {isa = PBXBuildFile; fileRef = CCED0A3D1642BBA200986366 /* DKAArtWork.m */; };
+		CCED0A411642BE7C00986366 /* DKAArtWorkDao.m in Sources */ = {isa = PBXBuildFile; fileRef = CCED0A401642BE7C00986366 /* DKAArtWorkDao.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,12 @@
 		CCED0A2A1642A2C600986366 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CCED0A2C1642A2C600986366 /* de_KunstkijkerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = de_KunstkijkerTests.h; sourceTree = "<group>"; };
 		CCED0A2D1642A2C600986366 /* de_KunstkijkerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = de_KunstkijkerTests.m; sourceTree = "<group>"; };
+		CCED0A371642BABE00986366 /* ArtDB.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = ArtDB.sqlite; path = "/Volumes/data disk/Downloads/ArtDB.sqlite"; sourceTree = "<absolute>"; };
+		CCED0A3A1642BB4900986366 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		CCED0A3C1642BBA200986366 /* DKAArtWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKAArtWork.h; sourceTree = "<group>"; };
+		CCED0A3D1642BBA200986366 /* DKAArtWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKAArtWork.m; sourceTree = "<group>"; };
+		CCED0A3F1642BE7C00986366 /* DKAArtWorkDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKAArtWorkDao.h; sourceTree = "<group>"; };
+		CCED0A401642BE7C00986366 /* DKAArtWorkDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKAArtWorkDao.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCED0A3B1642BB4900986366 /* libsqlite3.dylib in Frameworks */,
 				CCED09FA1642A2C600986366 /* UIKit.framework in Frameworks */,
 				CCED09FC1642A2C600986366 /* Foundation.framework in Frameworks */,
 				CCED09FE1642A2C600986366 /* CoreGraphics.framework in Frameworks */,
@@ -89,6 +100,8 @@
 		CCED09EA1642A2C600986366 = {
 			isa = PBXGroup;
 			children = (
+				CCED0A3A1642BB4900986366 /* libsqlite3.dylib */,
+				CCED0A391642BAC500986366 /* Resources */,
 				CCED09FF1642A2C600986366 /* de Kunstkijker */,
 				CCED0A261642A2C600986366 /* de KunstkijkerTests */,
 				CCED09F81642A2C600986366 /* Frameworks */,
@@ -126,6 +139,10 @@
 				CCED0A171642A2C600986366 /* DKAViewController.h */,
 				CCED0A181642A2C600986366 /* DKAViewController.m */,
 				CCED0A001642A2C600986366 /* Supporting Files */,
+				CCED0A3C1642BBA200986366 /* DKAArtWork.h */,
+				CCED0A3D1642BBA200986366 /* DKAArtWork.m */,
+				CCED0A3F1642BE7C00986366 /* DKAArtWorkDao.h */,
+				CCED0A401642BE7C00986366 /* DKAArtWorkDao.m */,
 			);
 			path = "de Kunstkijker";
 			sourceTree = "<group>";
@@ -161,6 +178,14 @@
 				CCED0A291642A2C600986366 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CCED0A391642BAC500986366 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CCED0A371642BABE00986366 /* ArtDB.sqlite */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +266,7 @@
 				CCED0A101642A2C600986366 /* Default-568h@2x.png in Resources */,
 				CCED0A131642A2C600986366 /* MainStoryboard_iPhone.storyboard in Resources */,
 				CCED0A161642A2C600986366 /* MainStoryboard_iPad.storyboard in Resources */,
+				CCED0A381642BABE00986366 /* ArtDB.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +304,8 @@
 				CCED0A061642A2C600986366 /* main.m in Sources */,
 				CCED0A0A1642A2C600986366 /* DKAAppDelegate.m in Sources */,
 				CCED0A191642A2C600986366 /* DKAViewController.m in Sources */,
+				CCED0A3E1642BBA200986366 /* DKAArtWork.m in Sources */,
+				CCED0A411642BE7C00986366 /* DKAArtWorkDao.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,7 +385,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -379,7 +407,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
