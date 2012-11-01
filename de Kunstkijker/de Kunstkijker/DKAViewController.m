@@ -11,6 +11,8 @@
 #import "DKAArtWork.h"
 
 @interface DKAViewController ()
+@property (nonatomic) int currentItem;
+
 
 @end
 @implementation DKAViewController
@@ -21,13 +23,20 @@
 @synthesize titleLabel;
 @synthesize artistLabel;
 @synthesize descriptionTextView;
+@synthesize objectNumber;
+
 
 
 - (void)viewDidLoad
 {
+    
     DKAArtWorkDao * dao =[[DKAArtWorkDao alloc] init];
     self.artWorks = [dao getMyArtworks];
-    DKAArtWork *artWork = (DKAArtWork*) [self.artWorks objectAtIndex:0];
+    
+//    for (DKAArtWork *artWork : artWorks){
+//        if (
+//    }
+    DKAArtWork *artWork = (DKAArtWork*) [self.artWorks objectAtIndex:self.currentItem];
     
     [self.objectNumberLabel setText:(artWork.objectNumber)];
     [self.titleLabel setText:(artWork.title)];
@@ -47,6 +56,7 @@
 }
 
 - (IBAction)getNext:(id)sender{
+    
     
 }
 -(IBAction)getPrevious:(id)sender{
