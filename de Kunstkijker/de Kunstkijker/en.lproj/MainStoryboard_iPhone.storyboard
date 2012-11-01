@@ -1,15 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="hqk-Tk-WxN">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
     </dependencies>
     <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="i39-ji-gpA">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A1b-Z7-LXT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="SzT-LI-gMh" customClass="DKAMainViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uFp-5M-MKy">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Nly-Pb-y6v">
+                        <barButtonItem key="rightBarButtonItem" title="Details" id="SXx-nW-zQY">
+                            <connections>
+                                <segue destination="2" kind="push" identifier="DETAIL_VIEW" id="oxj-io-yNu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-58" y="-260"/>
+        </scene>
         <!--View Controller - Object: objectId-->
         <scene sceneID="5">
             <objects>
                 <viewController title="Object: objectId" id="2" customClass="DKAViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="bottom" id="6fn-gD-Vg8" userLabel="scroll view">
@@ -75,6 +96,7 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="G12-Ja-gkt"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="artistLabel" destination="eAm-6M-aOR" id="o0w-j9-tjo"/>
@@ -86,10 +108,31 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="632" y="80"/>
+            <point key="canvasLocation" x="437" y="-264"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zmg-9y-mCm">
+            <objects>
+                <navigationController id="hqk-Tk-WxN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kgt-S6-ySB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="SzT-LI-gMh" kind="relationship" relationship="rootViewController" id="tny-8V-9gU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L4F-nr-3Ba" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-584" y="-260"/>
         </scene>
     </scenes>
     <classes>
+        <class className="DKAMainViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DKAMainViewController.h"/>
+        </class>
         <class className="DKAViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DKAViewController.h"/>
             <relationships>

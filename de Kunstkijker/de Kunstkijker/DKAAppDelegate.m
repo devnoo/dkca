@@ -7,6 +7,7 @@
 //
 
 #import "DKAAppDelegate.h"
+#import "DKAMainViewController.h"
 
 @implementation DKAAppDelegate
 
@@ -42,5 +43,26 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    
+    NSLog(@"bla");
+    // get "target_url" from incoming url
+    // and parse out MYCategory and MYItem identifiers
+    
+    UINavigationController *navigationController = (UINavigationController*) self.window.rootViewController;
+    DKAMainViewController *mainViewController = [[navigationController viewControllers] objectAtIndex:0];
+    mainViewController.objectNumber = [url.resourceSpecifier substringFromIndex: 2];
+    NSLog([ @"Resource is " stringByAppendingString: url.resourceSpecifier]);
+    [mainViewController performSegueWithIdentifier:@"DETAIL_VIEW" sender:self];
+    
+    //    // something like this???
+    //    [self.window makeKeyAndVisible];
+    //    [self.window.rootViewController performSegueWithIdentifier:@"DETAIL_PAGE" sender:self];
+    
+    //
+    return YES;
+}
+
 
 @end
