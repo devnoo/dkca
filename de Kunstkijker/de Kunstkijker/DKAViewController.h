@@ -17,7 +17,7 @@
 @property (nonatomic, weak) IBOutlet UILabel *objectNumberLabel;
 @property (nonatomic, weak) IBOutlet UILabel *artistLabel;
 @property (weak, nonatomic) IBOutlet UITextView *descriptionTextView;
-@property (nonatomic) long objectNumber;
+@property (nonatomic) NSString *objectNumber;
 
 
 - (IBAction)getNext:(id)sender;

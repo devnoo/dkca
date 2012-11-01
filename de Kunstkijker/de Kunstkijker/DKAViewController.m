@@ -33,9 +33,13 @@
     DKAArtWorkDao * dao =[[DKAArtWorkDao alloc] init];
     self.artWorks = [dao getMyArtworks];
     
-//    for (DKAArtWork *artWork : artWorks){
-//        if (
-//    }
+    for (DKAArtWork *artWork in self.artWorks){
+        if (artWork.objectNumber == self.objectNumber){
+            self.currentItem = [self.artWorks indexOfObject:artWork];
+            break;
+            
+        }
+    }
     DKAArtWork *artWork = (DKAArtWork*) [self.artWorks objectAtIndex:self.currentItem];
     
     [self.objectNumberLabel setText:(artWork.objectNumber)];
