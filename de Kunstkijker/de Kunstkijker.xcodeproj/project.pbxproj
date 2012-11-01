@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CCED09FA1642A2C600986366 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCED09F91642A2C600986366 /* UIKit.framework */; };
+		CCED09FC1642A2C600986366 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCED09FB1642A2C600986366 /* Foundation.framework */; };
+		CCED09FE1642A2C600986366 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCED09FD1642A2C600986366 /* CoreGraphics.framework */; };
+		CCED0A041642A2C600986366 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CCED0A021642A2C600986366 /* InfoPlist.strings */; };
+		CCED0A061642A2C600986366 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCED0A051642A2C600986366 /* main.m */; };
+		CCED0A0A1642A2C600986366 /* DKAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCED0A091642A2C600986366 /* DKAAppDelegate.m */; };
+		CCED0A0C1642A2C600986366 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CCED0A0B1642A2C600986366 /* Default.png */; };
+		CCED0A0E1642A2C600986366 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCED0A0D1642A2C600986366 /* Default@2x.png */; };
+		CCED0A101642A2C600986366 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCED0A0F1642A2C600986366 /* Default-568h@2x.png */; };
+		CCED0A131642A2C600986366 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCED0A111642A2C600986366 /* MainStoryboard_iPhone.storyboard */; };
+		CCED0A161642A2C600986366 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCED0A141642A2C600986366 /* MainStoryboard_iPad.storyboard */; };
+		CCED0A191642A2C600986366 /* DKAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCED0A181642A2C600986366 /* DKAViewController.m */; };
+		CCED0A211642A2C600986366 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCED0A201642A2C600986366 /* SenTestingKit.framework */; };
+		CCED0A221642A2C600986366 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCED09F91642A2C600986366 /* UIKit.framework */; };
+		CCED0A231642A2C600986366 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCED09FB1642A2C600986366 /* Foundation.framework */; };
+		CCED0A2B1642A2C600986366 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CCED0A291642A2C600986366 /* InfoPlist.strings */; };
+		CCED0A2E1642A2C600986366 /* de_KunstkijkerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCED0A2D1642A2C600986366 /* de_KunstkijkerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CCED0A241642A2C600986366 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCED09EC1642A2C600986366 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCED09F41642A2C600986366;
+			remoteInfo = "de Kunstkijker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CCED09F51642A2C600986366 /* de Kunstkijker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "de Kunstkijker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCED09F91642A2C600986366 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CCED09FB1642A2C600986366 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CCED09FD1642A2C600986366 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CCED0A011642A2C600986366 /* de Kunstkijker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "de Kunstkijker-Info.plist"; sourceTree = "<group>"; };
+		CCED0A031642A2C600986366 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CCED0A051642A2C600986366 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CCED0A071642A2C600986366 /* de Kunstkijker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "de Kunstkijker-Prefix.pch"; sourceTree = "<group>"; };
+		CCED0A081642A2C600986366 /* DKAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKAAppDelegate.h; sourceTree = "<group>"; };
+		CCED0A091642A2C600986366 /* DKAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKAAppDelegate.m; sourceTree = "<group>"; };
+		CCED0A0B1642A2C600986366 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CCED0A0D1642A2C600986366 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CCED0A0F1642A2C600986366 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CCED0A121642A2C600986366 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		CCED0A151642A2C600986366 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		CCED0A171642A2C600986366 /* DKAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKAViewController.h; sourceTree = "<group>"; };
+		CCED0A181642A2C600986366 /* DKAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKAViewController.m; sourceTree = "<group>"; };
+		CCED0A1F1642A2C600986366 /* de KunstkijkerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "de KunstkijkerTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCED0A201642A2C600986366 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		CCED0A281642A2C600986366 /* de KunstkijkerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "de KunstkijkerTests-Info.plist"; sourceTree = "<group>"; };
+		CCED0A2A1642A2C600986366 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CCED0A2C1642A2C600986366 /* de_KunstkijkerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = de_KunstkijkerTests.h; sourceTree = "<group>"; };
+		CCED0A2D1642A2C600986366 /* de_KunstkijkerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = de_KunstkijkerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCED09F21642A2C600986366 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCED09FA1642A2C600986366 /* UIKit.framework in Frameworks */,
+				CCED09FC1642A2C600986366 /* Foundation.framework in Frameworks */,
+				CCED09FE1642A2C600986366 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCED0A1B1642A2C600986366 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCED0A211642A2C600986366 /* SenTestingKit.framework in Frameworks */,
+				CCED0A221642A2C600986366 /* UIKit.framework in Frameworks */,
+				CCED0A231642A2C600986366 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CCED09EA1642A2C600986366 = {
+			isa = PBXGroup;
+			children = (
+				CCED09FF1642A2C600986366 /* de Kunstkijker */,
+				CCED0A261642A2C600986366 /* de KunstkijkerTests */,
+				CCED09F81642A2C600986366 /* Frameworks */,
+				CCED09F61642A2C600986366 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CCED09F61642A2C600986366 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCED09F51642A2C600986366 /* de Kunstkijker.app */,
+				CCED0A1F1642A2C600986366 /* de KunstkijkerTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCED09F81642A2C600986366 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCED09F91642A2C600986366 /* UIKit.framework */,
+				CCED09FB1642A2C600986366 /* Foundation.framework */,
+				CCED09FD1642A2C600986366 /* CoreGraphics.framework */,
+				CCED0A201642A2C600986366 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCED09FF1642A2C600986366 /* de Kunstkijker */ = {
+			isa = PBXGroup;
+			children = (
+				CCED0A081642A2C600986366 /* DKAAppDelegate.h */,
+				CCED0A091642A2C600986366 /* DKAAppDelegate.m */,
+				CCED0A111642A2C600986366 /* MainStoryboard_iPhone.storyboard */,
+				CCED0A141642A2C600986366 /* MainStoryboard_iPad.storyboard */,
+				CCED0A171642A2C600986366 /* DKAViewController.h */,
+				CCED0A181642A2C600986366 /* DKAViewController.m */,
+				CCED0A001642A2C600986366 /* Supporting Files */,
+			);
+			path = "de Kunstkijker";
+			sourceTree = "<group>";
+		};
+		CCED0A001642A2C600986366 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CCED0A011642A2C600986366 /* de Kunstkijker-Info.plist */,
+				CCED0A021642A2C600986366 /* InfoPlist.strings */,
+				CCED0A051642A2C600986366 /* main.m */,
+				CCED0A071642A2C600986366 /* de Kunstkijker-Prefix.pch */,
+				CCED0A0B1642A2C600986366 /* Default.png */,
+				CCED0A0D1642A2C600986366 /* Default@2x.png */,
+				CCED0A0F1642A2C600986366 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CCED0A261642A2C600986366 /* de KunstkijkerTests */ = {
+			isa = PBXGroup;
+			children = (
+				CCED0A2C1642A2C600986366 /* de_KunstkijkerTests.h */,
+				CCED0A2D1642A2C600986366 /* de_KunstkijkerTests.m */,
+				CCED0A271642A2C600986366 /* Supporting Files */,
+			);
+			path = "de KunstkijkerTests";
+			sourceTree = "<group>";
+		};
+		CCED0A271642A2C600986366 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CCED0A281642A2C600986366 /* de KunstkijkerTests-Info.plist */,
+				CCED0A291642A2C600986366 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CCED09F41642A2C600986366 /* de Kunstkijker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCED0A311642A2C600986366 /* Build configuration list for PBXNativeTarget "de Kunstkijker" */;
+			buildPhases = (
+				CCED09F11642A2C600986366 /* Sources */,
+				CCED09F21642A2C600986366 /* Frameworks */,
+				CCED09F31642A2C600986366 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "de Kunstkijker";
+			productName = "de Kunstkijker";
+			productReference = CCED09F51642A2C600986366 /* de Kunstkijker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CCED0A1E1642A2C600986366 /* de KunstkijkerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCED0A341642A2C600986366 /* Build configuration list for PBXNativeTarget "de KunstkijkerTests" */;
+			buildPhases = (
+				CCED0A1A1642A2C600986366 /* Sources */,
+				CCED0A1B1642A2C600986366 /* Frameworks */,
+				CCED0A1C1642A2C600986366 /* Resources */,
+				CCED0A1D1642A2C600986366 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCED0A251642A2C600986366 /* PBXTargetDependency */,
+			);
+			name = "de KunstkijkerTests";
+			productName = "de KunstkijkerTests";
+			productReference = CCED0A1F1642A2C600986366 /* de KunstkijkerTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCED09EC1642A2C600986366 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DKA;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "DNB innovation day team";
+			};
+			buildConfigurationList = CCED09EF1642A2C600986366 /* Build configuration list for PBXProject "de Kunstkijker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CCED09EA1642A2C600986366;
+			productRefGroup = CCED09F61642A2C600986366 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCED09F41642A2C600986366 /* de Kunstkijker */,
+				CCED0A1E1642A2C600986366 /* de KunstkijkerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCED09F31642A2C600986366 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCED0A041642A2C600986366 /* InfoPlist.strings in Resources */,
+				CCED0A0C1642A2C600986366 /* Default.png in Resources */,
+				CCED0A0E1642A2C600986366 /* Default@2x.png in Resources */,
+				CCED0A101642A2C600986366 /* Default-568h@2x.png in Resources */,
+				CCED0A131642A2C600986366 /* MainStoryboard_iPhone.storyboard in Resources */,
+				CCED0A161642A2C600986366 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCED0A1C1642A2C600986366 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCED0A2B1642A2C600986366 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CCED0A1D1642A2C600986366 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CCED09F11642A2C600986366 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCED0A061642A2C600986366 /* main.m in Sources */,
+				CCED0A0A1642A2C600986366 /* DKAAppDelegate.m in Sources */,
+				CCED0A191642A2C600986366 /* DKAViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCED0A1A1642A2C600986366 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCED0A2E1642A2C600986366 /* de_KunstkijkerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CCED0A251642A2C600986366 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCED09F41642A2C600986366 /* de Kunstkijker */;
+			targetProxy = CCED0A241642A2C600986366 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CCED0A021642A2C600986366 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCED0A031642A2C600986366 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CCED0A111642A2C600986366 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCED0A121642A2C600986366 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		CCED0A141642A2C600986366 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCED0A151642A2C600986366 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		CCED0A291642A2C600986366 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCED0A2A1642A2C600986366 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CCED0A2F1642A2C600986366 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CCED0A301642A2C600986366 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CCED0A321642A2C600986366 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "de Kunstkijker/de Kunstkijker-Prefix.pch";
+				INFOPLIST_FILE = "de Kunstkijker/de Kunstkijker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CCED0A331642A2C600986366 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "de Kunstkijker/de Kunstkijker-Prefix.pch";
+				INFOPLIST_FILE = "de Kunstkijker/de Kunstkijker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CCED0A351642A2C600986366 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/de Kunstkijker.app/de Kunstkijker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "de Kunstkijker/de Kunstkijker-Prefix.pch";
+				INFOPLIST_FILE = "de KunstkijkerTests/de KunstkijkerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		CCED0A361642A2C600986366 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/de Kunstkijker.app/de Kunstkijker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "de Kunstkijker/de Kunstkijker-Prefix.pch";
+				INFOPLIST_FILE = "de KunstkijkerTests/de KunstkijkerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CCED09EF1642A2C600986366 /* Build configuration list for PBXProject "de Kunstkijker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCED0A2F1642A2C600986366 /* Debug */,
+				CCED0A301642A2C600986366 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCED0A311642A2C600986366 /* Build configuration list for PBXNativeTarget "de Kunstkijker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCED0A321642A2C600986366 /* Debug */,
+				CCED0A331642A2C600986366 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CCED0A341642A2C600986366 /* Build configuration list for PBXNativeTarget "de KunstkijkerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCED0A351642A2C600986366 /* Debug */,
+				CCED0A361642A2C600986366 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CCED09EC1642A2C600986366 /* Project object */;
+}
