@@ -23,5 +23,8 @@
 - (IBAction)getNext:(id)sender;
 - (IBAction)getPrevious:(id)sender;
 
+- (IBAction)dismiss:(id)sender;
+
+
 
 @end
