@@ -110,8 +110,13 @@
     for(DKAArtWork *artWork in artWorks){
         if ([[artWork.title lowercaseString] rangeOfString:searchText].location != NSNotFound){
             [searchResults addObject:artWork] ;
+        }else if ([[artWork.artist lowercaseString] rangeOfString:searchText].location != NSNotFound){
+            [searchResults addObject:artWork];
+            
+        }else if ([[artWork.description lowercaseString] rangeOfString:searchText].location != NSNotFound){
+            [searchResults addObject:artWork];
         }
-         
+        
     }
 }
 
