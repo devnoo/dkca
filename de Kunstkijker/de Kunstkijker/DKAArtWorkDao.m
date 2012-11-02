@@ -8,8 +8,12 @@
 
 #import "DKAArtWorkDao.h"
 #import "DKAArtWork.h"
+
+
+static sqlite3 *db;
+
 @implementation DKAArtWorkDao
--(NSMutableArray *) getMyArtworks{
++(NSMutableArray *) getMyArtworks{
     NSMutableArray *artworkArray = [[NSMutableArray alloc] init];
     @try {
         NSFileManager *fileMgr = [NSFileManager defaultManager];

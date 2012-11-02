@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4D77C13A164303E50020F17D /* DKAMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D77C139164303E50020F17D /* DKAMainViewController.m */; };
+		4D77C13E16432EDB0020F17D /* DKAQueryResultController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D77C13D16432EDB0020F17D /* DKAQueryResultController.m */; };
+		4D77C141164336E90020F17D /* DKAQueryResultTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D77C140164336E90020F17D /* DKAQueryResultTableViewCell.m */; };
 		B4C45CEE1642EC8700DF58B3 /* ArtDB.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = B4C45CED1642EC8700DF58B3 /* ArtDB.sqlite */; };
 		CCED09FA1642A2C600986366 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCED09F91642A2C600986366 /* UIKit.framework */; };
 		CCED09FC1642A2C600986366 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCED09FB1642A2C600986366 /* Foundation.framework */; };
@@ -44,6 +46,10 @@
 /* Begin PBXFileReference section */
 		4D77C138164303E50020F17D /* DKAMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKAMainViewController.h; sourceTree = "<group>"; };
 		4D77C139164303E50020F17D /* DKAMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKAMainViewController.m; sourceTree = "<group>"; };
+		4D77C13C16432EDB0020F17D /* DKAQueryResultController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKAQueryResultController.h; sourceTree = "<group>"; };
+		4D77C13D16432EDB0020F17D /* DKAQueryResultController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKAQueryResultController.m; sourceTree = "<group>"; };
+		4D77C13F164336E90020F17D /* DKAQueryResultTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKAQueryResultTableViewCell.h; sourceTree = "<group>"; };
+		4D77C140164336E90020F17D /* DKAQueryResultTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKAQueryResultTableViewCell.m; sourceTree = "<group>"; };
 		B4C45CED1642EC8700DF58B3 /* ArtDB.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ArtDB.sqlite; sourceTree = "<group>"; };
 		CCED09F51642A2C600986366 /* de Kunstkijker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "de Kunstkijker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCED09F91642A2C600986366 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -138,6 +144,8 @@
 				CCED0A081642A2C600986366 /* DKAAppDelegate.h */,
 				CCED0A091642A2C600986366 /* DKAAppDelegate.m */,
 				CCED0A111642A2C600986366 /* MainStoryboard_iPhone.storyboard */,
+				4D77C13F164336E90020F17D /* DKAQueryResultTableViewCell.h */,
+				4D77C140164336E90020F17D /* DKAQueryResultTableViewCell.m */,
 				4D77C138164303E50020F17D /* DKAMainViewController.h */,
 				4D77C139164303E50020F17D /* DKAMainViewController.m */,
 				CCED0A141642A2C600986366 /* MainStoryboard_iPad.storyboard */,
@@ -148,6 +156,8 @@
 				CCED0A3D1642BBA200986366 /* DKAArtWork.m */,
 				CCED0A3F1642BE7C00986366 /* DKAArtWorkDao.h */,
 				CCED0A401642BE7C00986366 /* DKAArtWorkDao.m */,
+				4D77C13C16432EDB0020F17D /* DKAQueryResultController.h */,
+				4D77C13D16432EDB0020F17D /* DKAQueryResultController.m */,
 			);
 			path = "de Kunstkijker";
 			sourceTree = "<group>";
@@ -313,6 +323,8 @@
 				CCED0A3E1642BBA200986366 /* DKAArtWork.m in Sources */,
 				CCED0A411642BE7C00986366 /* DKAArtWorkDao.m in Sources */,
 				4D77C13A164303E50020F17D /* DKAMainViewController.m in Sources */,
+				4D77C13E16432EDB0020F17D /* DKAQueryResultController.m in Sources */,
+				4D77C141164336E90020F17D /* DKAQueryResultTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

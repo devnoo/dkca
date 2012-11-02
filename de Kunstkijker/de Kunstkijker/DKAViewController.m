@@ -30,15 +30,14 @@
 - (void)viewDidLoad
 {
     
-    DKAArtWorkDao * dao =[[DKAArtWorkDao alloc] init];
-    self.artWorks = [dao getMyArtworks];
+    //DKAArtWorkDao * dao =[[DKAArtWorkDao alloc] init];
+    self.artWorks = [DKAArtWorkDao getMyArtworks];
     
     if (self.objectNumber){
         for (DKAArtWork *artWork in self.artWorks){
-            if (artWork.objectNumber == self.objectNumber){
+            if ([artWork.objectNumber isEqualToString: self.objectNumber]){
                 self.currentItem = [self.artWorks indexOfObject:artWork];
-                break;
-                
+                break;               
             }
         }
         

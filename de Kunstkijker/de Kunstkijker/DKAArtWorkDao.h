@@ -11,9 +11,7 @@
 
 @interface DKAArtWorkDao : NSObject{
 
-    sqlite3 *db;
-    
 }
-- (NSMutableArray * ) getMyArtworks;
++ (NSMutableArray * ) getMyArtworks;
 
 @end

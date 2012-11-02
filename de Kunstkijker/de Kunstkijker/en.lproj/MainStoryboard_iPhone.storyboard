@@ -11,19 +11,92 @@
                     <view key="view" contentMode="scaleToFill" id="uFp-5M-MKy">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Mgf-fo-Ncq">
+                                <rect key="frame" x="82" y="134" width="157" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Zoekresultaten">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="i7E-iz-DZk" kind="push" id="Oif-O9-uU4"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Nly-Pb-y6v">
-                        <barButtonItem key="rightBarButtonItem" title="Details" id="SXx-nW-zQY">
+                        <nil key="title"/>
+                        <barButtonItem key="rightBarButtonItem" title="Details" id="eV1-yo-2P0">
                             <connections>
-                                <segue destination="2" kind="push" identifier="DETAIL_VIEW" id="oxj-io-yNu"/>
+                                <segue destination="2" kind="push" identifier="DETAIL_VIEW" id="5Me-md-d0i"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A1b-Z7-LXT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-58" y="-260"/>
+            <point key="canvasLocation" x="-254" y="-264"/>
+        </scene>
+        <!--Query Result Controller-->
+        <scene sceneID="ugC-p6-xel">
+            <objects>
+                <tableViewController id="i7E-iz-DZk" customClass="DKAQueryResultController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="73" sectionHeaderHeight="22" sectionFooterHeight="22" id="hYW-kY-iAt">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="queryTableCell" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="73" id="WFn-ft-Xui" customClass="DKAQueryResultTableViewCell">
+                                <rect key="frame" x="0.0" y="22" width="320" height="73"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="ybw-6H-QYo">
+                                            <rect key="frame" x="8" y="11" width="54" height="49"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hau-jt-rgR">
+                                            <rect key="frame" x="70" y="11" width="212" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HW1-p5-Lyz">
+                                            <rect key="frame" x="70" y="36" width="212" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <outlet property="artistLabel" destination="hau-jt-rgR" id="IBZ-C9-jx7"/>
+                                    <outlet property="image" destination="ybw-6H-QYo" id="GGC-ln-nq6"/>
+                                    <outlet property="titleLabel" destination="HW1-p5-Lyz" id="a8q-DB-xeb"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="i7E-iz-DZk" id="41l-HC-U3d"/>
+                            <outlet property="delegate" destination="i7E-iz-DZk" id="jhW-Pf-jwA"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="TJB-8Z-coU"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="40P-KJ-rE7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="103" y="195"/>
         </scene>
         <!--View Controller - Object: objectId-->
         <scene sceneID="5">
@@ -146,23 +219,6 @@
             <point key="canvasLocation" x="-584" y="-260"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="DKAMainViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DKAMainViewController.h"/>
-        </class>
-        <class className="DKAViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DKAViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="getNext:"/>
-                <relationship kind="action" name="getPrevious:"/>
-                <relationship kind="outlet" name="artistLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="descriptionTextView" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="objectNumberLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="photoView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
