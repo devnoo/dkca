@@ -19,6 +19,8 @@
 @property (weak, nonatomic) IBOutlet UITextView *descriptionTextView;
 @property (nonatomic) NSString *objectNumber;
 
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UIView *containedView;
 
 - (IBAction)getNext:(id)sender;
 - (IBAction)getPrevious:(id)sender;
