@@ -50,6 +50,9 @@
     
     [self.descriptionTextView setText:(artWork.description)];
     
+    //set scrollviewsize to size of contained view
+    [self.scrollView setContentSize: CGSizeMake(320,1000)];
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
@@ -99,6 +102,8 @@
 
 - (void)viewDidUnload {
     [self setDescriptionTextView:nil];
+    [self setScrollView:nil];
+    [self setContainedView:nil];
     [super viewDidUnload];
 }
 @end
