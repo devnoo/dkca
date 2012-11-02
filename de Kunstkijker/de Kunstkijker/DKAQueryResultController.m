@@ -51,10 +51,7 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return 1;
-}
+
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -79,6 +76,16 @@
    
     return cell;
 }
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSLog(@"in prepare segue");
+    if([@"presentDetail" isEqualToString:segue.identifier]) {
+        NSIndexPath *index = [self.tableView indexPathForCell:sender];
+        DKAArtWork *artwork = [self.artWorks objectAtIndex:index.row];
+        [[segue destinationViewController] setObjectNumber:artwork.objectNumber];
+    }
+}
+
+
 
 
 
