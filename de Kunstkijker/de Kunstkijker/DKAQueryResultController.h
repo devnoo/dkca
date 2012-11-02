@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface DKAQueryResultController : UITableViewController
+@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
+@property (strong, nonatomic) IBOutlet UISearchDisplayController *searchController;
 
 @end

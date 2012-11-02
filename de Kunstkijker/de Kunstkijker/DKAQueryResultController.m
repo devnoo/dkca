@@ -15,21 +15,16 @@
 @interface DKAQueryResultController ()
 
 @property (nonatomic, retain) NSMutableArray *artWorks;
+@property (nonatomic, retain) NSMutableArray *searchResults;
 
 @end
 
 @implementation DKAQueryResultController
 @synthesize artWorks;
+@synthesize searchResults;
 
 
 
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-    }
-    return self;
-}
 
 - (void)viewDidLoad
 {
@@ -43,11 +38,6 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 #pragma mark - Table view data source
 
@@ -55,7 +45,17 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [artWorks count];
+    NSInteger rows = 0;
+    
+    if ([tableView
+         isEqual:self.searchDisplayController.searchResultsTableView]){
+        rows = [self.searchResults count];
+    }
+    else{
+        rows = [self.artWorks count];
+    }
+    
+    return rows;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -67,9 +67,20 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
                                       reuseIdentifier:CellIdentifier];
     }
-   
+    
+    DKAArtWork *artwork;
+         
+    if ([tableView isEqual:self.searchDisplayController.searchResultsTableView]){
+        artwork = [searchResults objectAtIndex:indexPath.row];
+    }
+    else{
+        artwork= [self.artWorks objectAtIndex:indexPath.row];
+    }
+        
+        
+    
     // Configure the cell...
-    DKAArtWork *artwork = [artWorks objectAtIndex:[indexPath row]];
+  
     cell.imageView.image = artwork.photo;
     cell.textLabel.text = artwork.title;
     cell.detailTextLabel.text = artwork.artist;
@@ -86,7 +97,39 @@
 }
 
 
+- (void)filterContentForSearchText:(NSString*)searchText
+                             scope:(NSString*)scope
+{
+    self.searchResults = [[NSMutableArray alloc] initWithArray:[artWorks subarrayWithRange:NSMakeRange(1,3)]];
+}
 
 
 
+- (void)viewDidUnload {
+    [self setSearchBar:nil];
+    [self setSearchController:nil];
+    [super viewDidUnload];
+}
+#pragma mark - UISearchDisplayController delegate methods
+ -(BOOL)searchDisplayController:(UISearchDisplayController *)controller
+            shouldReloadTableForSearchString:(NSString *)searchString
+    {
+        [self filterContentForSearchText:searchString
+                                   scope:[[self.searchDisplayController.searchBar scopeButtonTitles]
+                                          objectAtIndex:[self.searchDisplayController.searchBar
+                                                         selectedScopeButtonIndex]]];
+        
+        return YES;
+    }
+                                                               
+ - (BOOL)searchDisplayController:(UISearchDisplayController *)controller
+            shouldReloadTableForSearchScope:(NSInteger)searchOption
+    {
+        [self filterContentForSearchText:[self.searchDisplayController.searchBar text] 
+                                   scope:[[self.searchDisplayController.searchBar scopeButtonTitles]
+                                          objectAtIndex:searchOption]];
+        
+        return YES;
+    }
+                                                               
 @end
