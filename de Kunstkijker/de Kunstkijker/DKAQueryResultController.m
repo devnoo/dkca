@@ -22,20 +22,16 @@
 @implementation DKAQueryResultController
 @synthesize artWorks;
 @synthesize searchResults;
-
+@synthesize searchController;
 
 
 
 - (void)viewDidLoad
 {
-        self.artWorks = [DKAArtWorkDao getMyArtworks];
+     self.artWorks = [DKAArtWorkDao getMyArtworks];
+    
+    
     [super viewDidLoad];
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 
@@ -61,15 +57,17 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"queryTableCell";
-       UITableViewCell *cell = [tableView
+       UITableViewCell *cell = [self.tableView
                              dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
                                       reuseIdentifier:CellIdentifier];
+        
     }
     
     DKAArtWork *artwork;
-         
+    
+    
     if ([tableView isEqual:self.searchDisplayController.searchResultsTableView]){
         artwork = [searchResults objectAtIndex:indexPath.row];
     }
@@ -77,10 +75,7 @@
         artwork= [self.artWorks objectAtIndex:indexPath.row];
     }
         
-        
-    
     // Configure the cell...
-  
     cell.imageView.image = artwork.photo;
     cell.textLabel.text = artwork.title;
     cell.detailTextLabel.text = artwork.artist;
@@ -90,9 +85,17 @@
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     NSLog(@"in prepare segue");
     if([@"presentDetail" isEqualToString:segue.identifier]) {
-        NSIndexPath *index = [self.tableView indexPathForCell:sender];
-        DKAArtWork *artwork = [self.artWorks objectAtIndex:index.row];
-        [[segue destinationViewController] setObjectNumber:artwork.objectNumber];
+        if (searchController.isActive){
+            NSIndexPath *index = [searchController.searchResultsTableView indexPathForCell:sender];
+            DKAArtWork *artwork = [self.searchResults objectAtIndex:index.row];
+            [[segue destinationViewController] setObjectNumber:artwork.objectNumber];
+            
+        }else{
+            NSIndexPath *index = [self.tableView indexPathForCell:sender];
+            DKAArtWork *artwork = [self.artWorks objectAtIndex:index.row];
+            [[segue destinationViewController] setObjectNumber:artwork.objectNumber];
+        }
+        
     }
 }
 
@@ -100,7 +103,16 @@
 - (void)filterContentForSearchText:(NSString*)searchText
                              scope:(NSString*)scope
 {
-    self.searchResults = [[NSMutableArray alloc] initWithArray:[artWorks subarrayWithRange:NSMakeRange(1,3)]];
+    searchText = [searchText lowercaseString];
+    searchResults = [[NSMutableArray alloc] init];
+    
+    
+    for(DKAArtWork *artWork in artWorks){
+        if ([[artWork.title lowercaseString] rangeOfString:searchText].location != NSNotFound){
+            [searchResults addObject:artWork] ;
+        }
+         
+    }
 }
 
 
@@ -129,7 +141,7 @@
                                    scope:[[self.searchDisplayController.searchBar scopeButtonTitles]
                                           objectAtIndex:searchOption]];
         
-        return YES;
+        return NO;
     }
                                                                
 @end
