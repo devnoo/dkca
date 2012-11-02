@@ -52,7 +52,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="queryTableCell" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="yC8-ux-cz7" detailTextLabel="sXw-bu-ixE" imageView="g8h-tZ-q6M" rowHeight="73" style="IBUITableViewCellStyleSubtitle" id="WFn-ft-Xui">
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="queryTableCell" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="queryTableCell" textLabel="yC8-ux-cz7" detailTextLabel="sXw-bu-ixE" imageView="g8h-tZ-q6M" rowHeight="73" style="IBUITableViewCellStyleSubtitle" id="WFn-ft-Xui">
                                 <rect key="frame" x="0.0" y="22" width="320" height="73"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -259,6 +259,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="5Me-md-d0i"/>
+        <segue reference="O4V-YL-WUg"/>
     </inferredMetricsTieBreakers>
 </document>
