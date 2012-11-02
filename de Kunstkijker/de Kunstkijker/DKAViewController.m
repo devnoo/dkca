@@ -96,10 +96,6 @@
     
 }
 
-- (IBAction)dismiss:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
-
 - (void)viewDidUnload {
     [self setDescriptionTextView:nil];
     [self setScrollView:nil];
