@@ -13,6 +13,7 @@
 		4D77C14E1643E9B50020F17D /* kunstkijker button QR.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D77C14A1643E9B50020F17D /* kunstkijker button QR.png */; };
 		4D77C14F1643E9B50020F17D /* kunstkijker button search.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D77C14B1643E9B50020F17D /* kunstkijker button search.png */; };
 		4D77C1501643E9B50020F17D /* kunstkijker menuscherm.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D77C14C1643E9B50020F17D /* kunstkijker menuscherm.png */; };
+		4D77C1521643F0900020F17D /* kunstkijker vlakke achtergrond (verlengd).png in Resources */ = {isa = PBXBuildFile; fileRef = 4D77C1511643F0900020F17D /* kunstkijker vlakke achtergrond (verlengd).png */; };
 		B4C45CEE1642EC8700DF58B3 /* ArtDB.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = B4C45CED1642EC8700DF58B3 /* ArtDB.sqlite */; };
 		CCED09FA1642A2C600986366 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCED09F91642A2C600986366 /* UIKit.framework */; };
 		CCED09FC1642A2C600986366 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCED09FB1642A2C600986366 /* Foundation.framework */; };
@@ -55,6 +56,7 @@
 		4D77C14A1643E9B50020F17D /* kunstkijker button QR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kunstkijker button QR.png"; sourceTree = "<group>"; };
 		4D77C14B1643E9B50020F17D /* kunstkijker button search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kunstkijker button search.png"; sourceTree = "<group>"; };
 		4D77C14C1643E9B50020F17D /* kunstkijker menuscherm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kunstkijker menuscherm.png"; sourceTree = "<group>"; };
+		4D77C1511643F0900020F17D /* kunstkijker vlakke achtergrond (verlengd).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kunstkijker vlakke achtergrond (verlengd).png"; sourceTree = "<group>"; };
 		B4C45CED1642EC8700DF58B3 /* ArtDB.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ArtDB.sqlite; sourceTree = "<group>"; };
 		CCED09F51642A2C600986366 /* de Kunstkijker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "de Kunstkijker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCED09F91642A2C600986366 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -168,6 +170,7 @@
 		CCED0A001642A2C600986366 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4D77C1511643F0900020F17D /* kunstkijker vlakke achtergrond (verlengd).png */,
 				4D77C1491643E9B50020F17D /* kunstkijker button browse.png */,
 				4D77C14A1643E9B50020F17D /* kunstkijker button QR.png */,
 				4D77C14B1643E9B50020F17D /* kunstkijker button search.png */,
@@ -294,6 +297,7 @@
 				4D77C14E1643E9B50020F17D /* kunstkijker button QR.png in Resources */,
 				4D77C14F1643E9B50020F17D /* kunstkijker button search.png in Resources */,
 				4D77C1501643E9B50020F17D /* kunstkijker menuscherm.png in Resources */,
+				4D77C1521643F0900020F17D /* kunstkijker vlakke achtergrond (verlengd).png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
